@@ -1,0 +1,22 @@
+Firtsname = input("Please enter your name?").strip().upper()
+Lastname = input("Please enter your lastname?").strip().upper()
+Lesson1 = float(input("Please enter your number 1 ?").strip())
+Lesson2 = float(input("Please enter your number 2 ?").strip())
+Lesson3 = float(input("Please enter your number 3 ?").strip())
+
+average = (Lesson1 + Lesson2 + Lesson3)/3
+
+if average > 17 :
+    print ("Nice")
+    print ("Dear "+Firtsname+" "+Lastname+" ,your grade point average in three subjects was ("+str(round(average,2))+")")
+    print("and you got an (Greate) grade.")
+    print ("\n\n")
+elif average < 17 and average >= 12 :
+    print ("Good")
+    print ("Dear "+Firtsname+" "+Lastname+",your grade point average in three subjects was ("+str(round(average,2))+")")
+    print("and you got an (Good) grade.")
+    print ("\n\n")
+elif average < 12 :
+    print ("failed")
+    print ("Dear "+Firtsname+" "+Lastname+",your grade point average in three subjects was ("+str(round(average,2))+")")
+    print("and you got an (failed) grade.")
